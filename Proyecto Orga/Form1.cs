@@ -53,41 +53,52 @@ namespace WindowsFormsApplication1
            
         }
 
+        int datoX = 0;
+        int datoY = 0;
         private void button1_Click_1(object sender, EventArgs e)
         {
-            int contador=0;
-            int datoX = 0;
-            int datoY = 0;
-            for (int i = 0; i < 8; i++)
+            for (int i = 0; i < 16; i++)
             {
-                for (int j = 0; j < 16; j++)
+                for (int j = 0; j < 8; j++)
                 {
-                    if (matrizBotones[i, j].getEstado())
+                    if (matrizBotones[j, i].getEstado())
                     {
-                        datoX = matrizBotones[i, j].getCx();
-                        datoY = matrizBotones[i, j].getCy();
+                        datoX = matrizBotones[j, i].getCx();
+                        datoY = matrizBotones[j, i].getCy();
                         //Console.WriteLine("x: " + matrizBotones[i, j].getCx() + " y: " + matrizBotones[i, j].getCy());
-                        MessageBox.Show("x: " + datoX + " y: " + datoY);
+                       // MessageBox.Show("x: " + datoX + " y: " + datoY);
                         puerto.activa_INIT();
                         Thread.Sleep(retardo);
+                        Console.WriteLine("Hay un 1 en: " +datoX+","+datoY); 
+                    }
+                    else
+                    {
+                        datoX = matrizBotones[j, i].getCx();
+                        datoY = matrizBotones[j, i].getCy();
                         puerto.desactiva_INIT();
                         Thread.Sleep(retardo);
-                        puerto.activa_INIT();
-                        Thread.Sleep(retardo);
-                        puerto.desactiva_INIT();
-                        Thread.Sleep(retardo);
-                        puerto.activa_INIT();
-                        Thread.Sleep(retardo);
-                        puerto.desactiva_INIT();
-                        Thread.Sleep(retardo);
-                        puerto.activa_INIT();
-                        Thread.Sleep(retardo);
-
+                        Console.WriteLine("Hay un 0 en: "+datoX+","+datoY);
+                    }
+                    if (j==7)
+                    {
+                        mandarInicio(j);  
                     }
                 }
             }
         }
-
+        private void mandarInicio(int n)
+        {
+            do
+            {
+                datoX = n;
+                puerto.activa_INIT();
+                Thread.Sleep(retardo);
+                n -= 1;
+                
+                Console.WriteLine("Regresando a la posicion 0 en:"+datoX+","+datoY);
+            } while (n != -1);
+            Console.WriteLine();
+        }
         private void button7_Click(object sender, EventArgs e)
         {
             leerArchivo();
