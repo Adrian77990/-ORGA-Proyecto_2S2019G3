@@ -33,8 +33,6 @@
             this.button2 = new System.Windows.Forms.Button();
             this.btnestrella = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tpdibujo = new System.Windows.Forms.TabPage();
@@ -53,7 +51,7 @@
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.btnestrella);
             this.panel1.Location = new System.Drawing.Point(39, 23);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(97, 244);
             this.panel1.TabIndex = 0;
@@ -61,7 +59,7 @@
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(12, 163);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(71, 57);
             this.button3.TabIndex = 2;
@@ -72,7 +70,7 @@
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(12, 89);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(71, 57);
             this.button2.TabIndex = 1;
@@ -83,7 +81,7 @@
             // btnestrella
             // 
             this.btnestrella.Location = new System.Drawing.Point(12, 15);
-            this.btnestrella.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnestrella.Margin = new System.Windows.Forms.Padding(2);
             this.btnestrella.Name = "btnestrella";
             this.btnestrella.Size = new System.Drawing.Size(71, 57);
             this.btnestrella.TabIndex = 0;
@@ -94,39 +92,19 @@
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.button4);
-            this.panel2.Controls.Add(this.button5);
             this.panel2.Controls.Add(this.button6);
+            this.panel2.Controls.Add(this.button7);
+            this.panel2.Controls.Add(this.button1);
             this.panel2.Location = new System.Drawing.Point(39, 288);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(97, 152);
             this.panel2.TabIndex = 1;
             // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(12, 103);
-            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(71, 33);
-            this.button4.TabIndex = 2;
-            this.button4.Text = " color3";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(12, 58);
-            this.button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(71, 33);
-            this.button5.TabIndex = 1;
-            this.button5.Text = " color2";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
             // button6
             // 
             this.button6.Location = new System.Drawing.Point(12, 14);
-            this.button6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button6.Margin = new System.Windows.Forms.Padding(2);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(71, 33);
             this.button6.TabIndex = 0;
@@ -138,7 +116,7 @@
             // 
             this.tabControl1.Controls.Add(this.tpdibujo);
             this.tabControl1.Location = new System.Drawing.Point(140, 23);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(494, 513);
@@ -147,9 +125,9 @@
             // tpdibujo
             // 
             this.tpdibujo.Location = new System.Drawing.Point(4, 22);
-            this.tpdibujo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tpdibujo.Margin = new System.Windows.Forms.Padding(2);
             this.tpdibujo.Name = "tpdibujo";
-            this.tpdibujo.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tpdibujo.Padding = new System.Windows.Forms.Padding(2);
             this.tpdibujo.Size = new System.Drawing.Size(486, 487);
             this.tpdibujo.TabIndex = 1;
             this.tpdibujo.Text = "Dibujo1";
@@ -158,8 +136,8 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(40, 445);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Location = new System.Drawing.Point(12, 51);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(68, 42);
             this.button1.TabIndex = 3;
@@ -169,8 +147,8 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(40, 492);
-            this.button7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button7.Location = new System.Drawing.Point(12, 98);
+            this.button7.Margin = new System.Windows.Forms.Padding(2);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(68, 38);
             this.button7.TabIndex = 4;
@@ -181,7 +159,7 @@
             // caja
             // 
             this.caja.Location = new System.Drawing.Point(638, 45);
-            this.caja.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.caja.Margin = new System.Windows.Forms.Padding(2);
             this.caja.Name = "caja";
             this.caja.Size = new System.Drawing.Size(240, 487);
             this.caja.TabIndex = 0;
@@ -193,12 +171,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(889, 540);
             this.Controls.Add(this.caja);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
@@ -215,8 +191,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnestrella;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tpdibujo;
